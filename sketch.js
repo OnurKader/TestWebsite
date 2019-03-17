@@ -18,5 +18,5 @@ function mouseDragged() {
 
 
 function draw() {
-
+  point(mouseX, mouseY);
 }
