@@ -1,8 +1,9 @@
 function setup() {
-  createCanvas(screenWidth, screenHeight);
+  createCanvas(1900, 1000);
   background(0);
-
-
+  fill(230, 99, 45);
+  noStroke();
+  rect(width / 2, height / 2, 40, 40);
 }
 
 function mouseDragged() {
