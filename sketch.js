@@ -1,9 +1,9 @@
 function setup() {
-  createCanvas(1900, 1000);
+  createCanvas(displayWidth, displayHeight);
   background(0);
-  fill(230, 99, 45);
+  fill(236, 102, 121);
   noStroke();
-  rect(width / 2, height / 2, 40, 40);
+  rect(width / 2, height / 2, 80, 175);
 }
 
 function mouseDragged() {
@@ -11,9 +11,9 @@ function mouseDragged() {
   let g = map(mouseX, 0, width, 25, 254);
   let b = map(seconds(), 0, 59, 66, 212);
   stroke(r, g, b, 1);
-  noFill();
   strokeWeight(144);
   line(mouseX, mouseY, pmouseX, pmouseY);
+  return false;
 }
 
 function mousePressed() {
@@ -21,13 +21,12 @@ function mousePressed() {
   let g = map(mouseX, 0, width, 25, 254);
   let b = map(seconds(), 0, 59, 66, 212);
   stroke(r, g, b, 1);
-  noFill();
   strokeWeight(144);
   line(mouseX, mouseY, pmouseX, pmouseY);
 }
 
 function draw() {
-  stroke(255);
-  strokeWeight(30);
-  point(mouseX, mouseY);
+  // stroke(255);
+  // strokeWeight(30);
+  // point(mouseX, mouseY);
 }
