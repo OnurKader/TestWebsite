@@ -8,8 +8,8 @@ function setup() {
 
 function draw() {
   if (mouseIsPressed) {
-    console.log("Hey!");
-    stroke(map(mouseY, 0, height, 252, 44), map(mouseX, 0, width, 42, 253), 189);
+    stroke(map(mouseY, 0, height, 252, 44), map(mouseX, 0, width, 42, 253), 189, 1);
+    strokeWeight(144);
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
 }
