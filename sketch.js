@@ -2,7 +2,7 @@ function setup() {
 	createCanvas(displayWidth, displayHeight);
 	background(0);
 	strokeWeight(144);
-	colorMode(HSV);
+	colorMode(HSB);
 }
 
 function draw() {
